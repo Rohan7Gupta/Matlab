@@ -1,0 +1,9 @@
+fs=1000;
+t=0:1/fs:10-1/fs;
+x=sin(2*pi*10*t);
+m=length(x);
+n=pow2(nextpow2(m));
+y=fft(x,n);
+f=(0:n-1)*(fs/n);
+power=y.*conj(y)/n;
+plot(f,power);

@@ -2,8 +2,8 @@
 Fs = 1000;          % Sampling frequency (Hz)
 T = 1/Fs;           % Sampling period
 t = 0:T:1;          % Time vector from 0 to 1 second
-f = 1000;              % Frequency of the sine wave (Hz)
-
+f = 100;              % Frequency of the sine wave (Hz)
+nfft = 2048;
 % Generate sine wave without using cosine function
 y = imag(exp(1i * 2 * pi * f * t));
 
